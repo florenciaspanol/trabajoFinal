@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Productos | Acampando</title>
+    <link rel="shortcut icon" href="../img/iconoMontana.png" type="image/favicon">
+</head>
+<body>
+    <header>
+        <img  class="logoInicio" src="../img/logoAcampando1.png" alt="logo de acampando">
+        <h1>Nuestros Productos</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>                
+            </ul>
+        </nav>
+    </header>
+    <h2>Algunos de nuestros productos</h2>
+    <section class="productos"> <!--aqui había puesto el id ="contenedor productos"-->
+    <div id ="contenedorProductos"> <!--aquí había puesto class="producto"-->
+        <img class ="tarjetas" src="../img/carpaCeleste.jpg" alt="carpa celeste chica">
+        <h3>Carpa chica</h3>
+        <p>Capacidad: 2 personas</p>
+        <p>altura: 120 cm</p>
+        <p>ancho: 95 cm</p>
+        <p>profundidad: 200 cm</p>
+        <p>peso: 2.1 kg</p>
+        <p>precio: $415487</p>
+        <input class= "boton-agregar-carrito" type="button" value="Agregar al carrito">
+    </div>
+    </section>
+    <section id="carrito">
+        <h2>Carrito</h2>
+        <ul></ul> <!--en esta ul vamos a agregar la lista de productos del carrito con el btn -->
+        <p>total a pagar $0 </p>
+        <input id= "boton-borrar" type="button" value="Borrar">
+        <input id= "boton-pagar" type="button" value="Ir a Pagar">
+        <p id= "mensajeCarrito"></p>
+    </section>
+    <footer> 
+        <p>Visitanos en nuestras redes sociales</p>
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/icons8-whatsapp.svg" alt="icono de whatsapp"> Whatsapp </a> 
+        <a href="http://www.instagram.com/"target="_blank"><img src="../img/icons8-instagram.svg" alt="icono de instagram">Instagram </a>
+        <a href="http://www.facebook.com/"target="_blank"> <img src="../img/icons8-facebook.svg" alt="icono de facebook"> Facebook</a>
+        <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.084358244785!2d-57.994370127850566!3d-34.92043086874066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1735488332297!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+        <a href="https://www.flaticon.es/iconos-gratis/facebook" title="facebook iconos" target="_blank">Iconos creados por Smashicons - Flaticon</a>
+    <script src="../productos.js"></script>
+</body>
+</html>

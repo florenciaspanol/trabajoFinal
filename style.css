@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+header{
+    background-color: #144D53;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+body{
+    font-family: "Rubik";
+    background-color: #ffffff;
+}
+
+nav ul li {
+    display: inline-block;
+}
+li{
+    list-style-type:none;
+    font-size: large;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5%;
+    margin: 10px;
+}
+
+li:hover{
+    background-color: #E4EDDB;
+    transform:translatey(-15px);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    /*background-color: #E4EDDB;*/
+}
+h1{
+    font-size: x-large;
+    margin-right: 100px;
+    color: #E4EDDB; 
+}
+h2, h3{
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+}
+.pInicio{
+    margin: 50px 200px;
+}
+.h2Inicio{
+    display:flex;
+    justify-content: center;
+    margin: 50px;
+}
+p{
+    margin: 20px;
+}
+#video{
+    display:flex;
+    justify-content:center;
+}
+.consejo{
+    margin:15px;
+}
+.logoInicio{
+    width: 300px;
+    height: auto;
+    margin-right: 150px;
+}
+.productos{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#contenedorProductos{   
+    margin: 10px;
+    padding:20px;
+    border-color: black;
+    border-style: double;
+    border-radius: 10px;
+    background-color: #307672;
+}
+
+.tarjetas{
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+}
+
+
+.boton-agregar-carrito{
+    font-size: medium;
+    margin: 10px 20px;
+    padding: 10px;
+    border: 3px;
+    border-radius: 2px;
+}
+.boton-agregar-carrito:hover{
+    background-color:  #E4EDDB;
+}
+#boton-pagar{
+    font-size: medium;
+    margin: 10px 20px;
+    padding: 10px;
+    border: 3px;
+    border-radius: 2px;
+}
+#boton-pagar:hover{
+    background-color: #E4EDDB;
+}
+#boton-borrar{
+    font-size: medium;
+    margin: 10px 20px;
+    padding: 10px;
+    border: 3px;
+    border-radius: 2px;
+}
+#boton-borrar:hover{
+    background-color: #E4EDDB;
+}
+#menunav{
+    display: inline-block;
+}
+form{
+    margin: 100px;
+    background-color: #E4EDDB;
+}
+form input{
+    border-style: solid;
+    border: 1px;
+    border-radius: 2px;
+    padding:10px;
+}
+form select{
+    padding: 15px;
+    margin: 10px;
+}
+form textarea{
+    padding: 10px;
+}
+fieldset{
+    padding:10px;
+}
+form button{
+    font-size:medium;
+    background-color: #307672;
+    padding: 10px 15px ;
+    border: 3px;
+    border-radius: 2px;
+    border-style: none;
+}
+.grid-container{
+display:grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: auto 1fr auto;
+gap: 10px;
+}
+.primerReseña{
+    background-color: #307672;
+}
+footer{
+    margin-top: 50px;
+    display: flex;
+    text-decoration: none;
+    background-color: #144D53;
+    flex-direction:column;
+    align-items: flex-start;
+}
+footer a {
+    background-color: #144D53;
+}
+
+iframe{
+    width: 400px;
+    height: 400px;
+}
+
+@media only screen and (max-width:600px){
+    body{
+        font-size: 25px;
+    }
+    .logoInicio{
+    display:none;
+    }
+    h1{
+        font-size: large;
+        margin-right: 20px;
+        color: #E4EDDB; 
+    }
+    .consejo ul li{
+        font-size: 35px;
+    }
+    .pInicio{
+        margin:20px;
+    }
+    .h2Inicio{
+        margin:20px;
+    }
+    .grid-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap:10px;
+    }
+    .tarjetas{
+        width: 400px;
+        height: auto;
+        margin: 20px;
+    }
+    form{
+        margin: 10px;
+        background-color: #E4EDDB;
+    }
+    form input{
+        border-style: solid;
+        border: 1px;
+        border-radius: 2px;
+        padding:25px;
+    }
+    form textarea{
+        padding: 15px;
+        margin:2px;
+    }
+    fieldset{
+        padding:10px;
+    }
+    form button{
+        font-size:x-large;
+        background-color: #307672;
+        padding: 10px 15px ;
+        border: 3px;
+        border-radius: 2px;
+        border-style: none;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        font-size: 35px;
+    }
+    .logoInicio{
+        width: 200px;
+        height: auto;
+        margin-right: 20px;
+    }
+    h1{
+        margin-rigth: 40px;
+    }
+    .consejo ul li{
+        font-size: 35px;
+    }
+    .pInicio{
+        margin:40px;
+    }
+    .h2Inicio{
+        margin:40px;
+    }
+    .grid-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap:15px;
+    }
+    .tarjetas{
+        width: 500px;
+        height: auto;
+        margin: 20px;
+    }
+    form{
+        margin: 5px;
+        background-color: #E4EDDB;
+    }
+    form input{
+        border-style: solid;
+        border: 1px;
+        border-radius: 2px;
+        padding:25px;
+    }
+    form input::placeholder{
+        font-size: 25px;
+    }
+    form textarea{
+        padding: 15px;
+        margin:2px;
+    }
+    form textarea::placeholder{
+        font-size: 25px;
+    }
+    form select::placeholder{
+        font-size: 45px;
+    }
+    fieldset{
+        padding:10px;
+    }
+    form button{
+        font-size:xx-large;
+        background-color: #307672;
+        padding: 10px 15px ;
+        border: 3px;
+        border-radius: 2px;
+        border-style: none;
+    }
+}
